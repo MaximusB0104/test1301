@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IPHONE</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Miao&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<h4 class="logo">Магаз</h4>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Смартфоны</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Ноутбуки</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Самтчасы</a></li>
+				</ul>
+				<div class="burger" onclick="burgerClick()">
+					<div class="burger__line burger__line_1"></div>
+					<div class="burger__line burger__line_2"></div>
+					<div class="burger__line burger__line_3"></div>
+				</div>
+			</nav>
+			<button class="btn_menu" id="btn-menu">Меню</button>
+			<div class="header__menu" id="menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="">Вход</a></li>
+					<li class="menu__item"><a href="">Корзина</a></li>
+					<li class="menu__item"><a href="">Акции</a></li>
+					<li class="menu__item"><a href="">Реклама</a></li>
+					<li class="menu__item">
+						<div class="theme">
+							<h4 class="theme__title">Темы</h4>
+							<ul class="theme__list">
+								<li class="theme__item">
+									<div class="theme__green" onclick="choiceWhite()"></div>
+								</li>
+								<li class="theme__item">
+									<div class="theme__dark" onclick="choiceDark()"></div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class='basket'>
+			<img src="img/basket.png" class="basket_img">
+			<p class="price_basket">0</p>
+		</div>
+	</header>
+	<main>
+<section class="shop">
+<div class="container">
+	<h1 class="shop_title">IPHONE 15</h1>
+
+	<div class="itc-slider" data-slider="itc-slider">
+		<div class="itc-slider__wrapper">
+			<div class="itc-slider__items">
+				<div class="itc-slider__item">
+					<img src="img/IPHONE 15.jpg" class="shop_img">
+				</div>
+				<div class="itc-slider__item">
+					<img src="img/2.jpg" class="shop_img">
+				</div>
+				<div class="itc-slider__item">
+					<img src="img/3.jpg" class="shop_img">
+				</div>
+			</div>
+		</div>
+		<button class="itc-slider__btn itc-slider__btn_prev"></button>
+  		<button class="itc-slider__btn itc-slider__btn_next"></button>
+	</div>
+	<div class="accordion" id="accordion-1">
+		<div class="accordion__item">
+			<h2 class="accordion__header">О тoваре</h2>
+			<div class="accordion__body">
+				<p class="shop_title">iPhone 15 попрощается с интерфейсом Lightning и перейдёт на USB-C, хотя некоторые считают, что Lightning может остаться на младших моделях. Даже если все модели получат USB-C, быстрым разъём будет только у старших моделей. Также смартфону приписывают совершенно новый датчик изображения и улучшенные фото- и видеовозможности. Презентация линейки iPhone 15 ожидается в следующем году, ориентировочно в сентябре.</p>
+			</div>
+		</div>
+		<div class="accordion__item">
+		<h2 class="accordion__header">Цена</h2>
+			<div class="accordion__body">
+			     <p class="shop_price">5000 ₽</p>
+	<button type="button" class="shop_btn" id="btn" onclick="buy()">Купить в FIXPRICE</button>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<section class="maps">
+	<div class="container">
+		<h1 class="maps__title">Точка самовывоза</h1>
+		<div class="google">
+			<h3 class="google__map">Google карта</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.4147288169696!2d26.01439337736112!3d53.13242097410375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d8cfd9240fdd65%3A0x392b162f56a728c7!2zR2FnYXJpbmEgMjcsINCR0LDRgNCw0L3QvtCy0LjRh9C4LCDQkdC10LvQsNGA0YPRgdGM!5e1!3m2!1sru!2sru!4v1678532254424!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div class="yandex__map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A34d2564c01bddf4f90d13180d031d58d6ce05c424065b3be49f3d918cebc0bc7&amp;source=constructor" width="559" height="379" frameborder="0"></iframe>	
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+	</div>
+</section>
+<div id="time">
+	
+</div>
+</main>
+<footer class="footer">
+	<div class="container container_footer">
+		<p class="footer__text">&copy; Магаз 2023г.</p>
+	</div>
+</footer>
+<script src="scripts/script.js"></script>
+<script src="scripts/itc-slider.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/accordion.js"></script>
+<script src="scripts/theme.js"></script>
+<script src="scripts/burger.js"></script>
+<script type="text/javascript" src="scripts/timer.js"></script>
+<script type="text/javascript" src="scripts/bootsrtap.js"></script>
+</body>
+</html>
